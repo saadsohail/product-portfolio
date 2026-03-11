@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syed Saad Sohail | CTO / VP Engineering Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+        
+        :root {
+            --primary: 234 179 8;
+        }
+        
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+        
+        .logo-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+        }
+
+        .timeline-line {
+            background: linear-gradient(to bottom, #eab308, #22c55e);
+        }
+
+        .modal {
+            animation: modalPop 0.3s ease forwards;
+        }
+        
+        @keyframes modalPop {
+            from { transform: scale(0.95); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        .project-card, .diagram-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .project-card:hover, .diagram-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgb(234 179 8 / 0.25);
+        }
+
+        .stat-number {
+            font-variant-numeric: tabular-nums;
+        }
+
+        .diagram-thumb {
+            aspect-ratio: 16/9;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+
+    <!-- NAV -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-zinc-950/80 backdrop-blur-lg border-b border-zinc-800">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 bg-yellow-500 rounded-2xl flex items-center justify-center text-zinc-950 font-bold text-2xl logo-font">S3</div>
+                <span class="text-2xl font-semibold tracking-tighter logo-font text-white">Saad Sohail</span>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#impact" class="hover:text-yellow-400 transition-colors">Impact</a>
+                <a href="#education" class="hover:text-yellow-400 transition-colors">Education</a>
+                <a href="#experience" class="hover:text-yellow-400 transition-colors">Experience</a>
+                <a href="#projects" class="hover:text-yellow-400 transition-colors">Projects</a>
+                <a href="#gallery" class="hover:text-yellow-400 transition-colors">Gallery</a>
+                <a href="#architecture" class="hover:text-yellow-400 transition-colors">Architecture</a>
+                <a href="#skills" class="hover:text-yellow-400 transition-colors">Tech</a>
+            </div>
+            
+            <a href="mailto:syedsaadsohail@gmail.com" 
+               class="px-6 py-3 bg-yellow-400 hover:bg-yellow-300 text-zinc-950 font-semibold rounded-2xl text-sm flex items-center gap-2 transition-all">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Contact</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero-bg pt-24 pb-20">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="pt-12">
+                <div class="inline-flex items-center gap-2 bg-zinc-900 border border-yellow-500/30 text-yellow-400 text-xs font-medium px-4 py-2 rounded-3xl mb-6">
+                    <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                    OPEN TO CTO • VP ENGINEERING • VP DATA ROLES (GCC preferred)
+                </div>
+                
+                <h1 class="text-6xl md:text-7xl font-semibold tracking-tighter logo-font leading-none text-white mb-4">
+                    Syed Saad<br>Sohail
+                </h1>
+                <p class="text-3xl text-zinc-400 font-light mb-8">14+ years building fintech super apps & ML platforms • 20M+ MAU • $70M+ turnover</p>
+                
+                <div class="flex flex-wrap gap-4">
+                    <a href="https://linkedin.com/in/ssaadsohail" target="_blank"
+                       class="flex items-center gap-3 bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 px-7 py-4 rounded-3xl text-sm font-medium transition-all">
+                        <i class="fa-brands fa-linkedin text-xl"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="tel:+971585849626"
+                       class="flex items-center gap-3 bg-white/10 hover:bg-white/20 px-7 py-4 rounded-3xl text-sm font-medium transition-all">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+971 58 584 9626</span>
+                    </a>
+                </div>
+                
+                <div class="mt-12 flex items-center gap-8 text-sm">
+                    <div>
+                        <div class="text-yellow-400 text-xs tracking-widest">CURRENTLY IN</div>
+                        <div class="font-medium">Dubai, UAE (10-year resident)</div>
+                    </div>
+                    <div class="h-9 w-px bg-zinc-700"></div>
+                    <div>
+                        <div class="text-yellow-400 text-xs tracking-widest">EMAIL</div>
+                        <a href="mailto:syedsaadsohail@gmail.com" class="font-medium hover:text-yellow-400">syedsaadsohail@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="relative">
+                <div class="aspect-square bg-gradient-to-br from-yellow-400/10 to-transparent rounded-[4rem] p-8 flex items-center justify-center">
+                    <div class="relative w-full max-w-md">
+                        <img src="https://picsum.photos/id/1015/600/600" 
+                             alt="Syed Saad Sohail" 
+                             class="rounded-3xl shadow-2xl border border-yellow-400/20">
+                        <div class="absolute -bottom-6 -right-6 bg-zinc-900 border border-yellow-400 rounded-3xl p-5 text-center shadow-xl">
+                            <div class="text-4xl font-bold text-yellow-400">20M+</div>
+                            <div class="text-xs tracking-widest text-zinc-400">MONTHLY ACTIVE USERS</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- IMPACT AT A GLANCE -->
+    <section id="impact" class="py-20 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="uppercase text-yellow-400 text-sm tracking-[3px]">IMPACT AT A GLANCE</span>
+                <h2 class="text-4xl font-semibold mt-2">Proven results across 3 continents</h2>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                <div class="bg-zinc-950 border border-zinc-800 rounded-3xl p-8 text-center group">
+                    <div class="text-5xl font-semibold text-yellow-400 stat-number" data-target="20">0</div>
+                    <div class="text-sm text-zinc-400 mt-1">MILLION MAU</div>
+                    <div class="h-px bg-zinc-800 my-6"></div>
+                    <div class="text-xs text-zinc-500">JazzWorld + MonCash</div>
+                </div>
+                
+                <div class="bg-zinc-950 border border-zinc-800 rounded-3xl p-8 text-center group">
+                    <div class="text-5xl font-semibold text-emerald-400 stat-number" data-target="70">0</div>
+                    <div class="text-sm text-zinc-400 mt-1">MILLION $ TURNOVER</div>
+                    <div class="h-px bg-zinc-800 my-6"></div>
+                    <div class="text-xs text-zinc-500">Owned platforms</div>
+                </div>
+                
+                <div class="bg-zinc-950 border border-zinc-800 rounded-3xl p-8 text-center group">
+                    <div class="text-5xl font-semibold text-yellow-400 stat-number" data-target="1.2">0</div>
+                    <div class="text-sm text-zinc-400 mt-1">MILLION $ EBITDA</div>
+                    <div class="h-px bg-zinc-800 my-6"></div>
+                    <div class="text-xs text-zinc-500">Delivered in Jamaica</div>
+                </div>
+                
+                <div class="bg-zinc-950 border border-zinc-800 rounded-3xl p-8 text-center group">
+                    <div class="text-5xl font-semibold text-rose-400 stat-number" data-target="7">0</div>
+                    <div class="text-sm text-zinc-400 mt-1">% CHURN REDUCTION</div>
+                    <div class="h-px bg-zinc-800 my-6"></div>
+                    <div class="text-xs text-zinc-500">Via ML models</div>
+                </div>
+                
+                <div class="bg-zinc-950 border border-zinc-800 rounded-3xl p-8 text-center group">
+                    <div class="text-5xl font-semibold text-sky-400 stat-number" data-target="15">0</div>
+                    <div class="text-sm text-zinc-400 mt-1">% OPEX REDUCTION</div>
+                    <div class="h-px bg-zinc-800 my-6"></div>
+                    <div class="text-xs text-zinc-500">Automation & right-sizing</div>
+                </div>
+                
+                <div class="bg-zinc-950 border border-zinc-800 rounded-3xl p-8 text-center group">
+                    <div class="text-5xl font-semibold text-purple-400 stat-number" data-target="5">0</div>
+                    <div class="text-sm text-zinc-400 mt-1">MIN KYC ONBOARDING</div>
+                    <div class="h-px bg-zinc-800 my-6"></div>
+                    <div class="text-xs text-zinc-500">AI-powered (was days)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: EDUCATION SECTION -->
+    <section id="education" class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="uppercase text-xs tracking-widest text-yellow-400">ACADEMIC BACKGROUND</span>
+                <h2 class="text-4xl font-semibold">Education</h2>
+            </div>
+
+            <div class="max-w-4xl mx-auto space-y-12">
+                <!-- MBA -->
+                <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-10">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                        <div>
+                            <h3 class="text-2xl font-semibold">MBA</h3>
+                            <p class="text-yellow-400 mt-1">Daniels School of Business, Purdue University</p>
+                            <p class="text-zinc-400 mt-2">USA / Germany (Dual Program)</p>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xl font-medium">Aug 2012 – Jul 2013</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BSc -->
+                <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-10">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                        <div>
+                            <h3 class="text-2xl font-semibold">B.Sc. Computer Engineering</h3>
+                            <p class="text-yellow-400 mt-1">FAST National University of Computer and Emerging Sciences (NUCES)</p>
+                            <p class="text-zinc-400 mt-2">Islamabad, Pakistan</p>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xl font-medium">Sep 2005 – Jul 2009</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE TIMELINE -->
+    <section id="experience" class="py-20 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center justify-between mb-12">
+                <div>
+                    <span class="uppercase text-xs tracking-widest text-yellow-400">PROFESSIONAL JOURNEY</span>
+                    <h2 class="text-4xl font-semibold">Leadership Timeline</h2>
+                </div>
+                <a href="#projects" class="text-sm flex items-center gap-2 hover:text-yellow-400">
+                    See projects <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            <div class="max-w-3xl mx-auto relative">
+                <div class="absolute left-8 top-12 bottom-12 w-0.5 timeline-line"></div>
+                
+                <div class="relative flex gap-8 mb-16">
+                    <div class="w-16 h-16 flex-shrink-0 bg-zinc-900 border border-yellow-400 rounded-2xl flex items-center justify-center z-10">
+                        <span class="text-xs font-medium text-center leading-tight">2022<br><span class="text-yellow-400">–</span><br>2025</span>
+                    </div>
+                    <div class="flex-1 pt-3">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="font-semibold text-xl">Group Head of Engineering & Data</div>
+                            <div class="px-3 py-1 text-[10px] bg-emerald-500/10 text-emerald-400 rounded-xl">MonCash • Digicel Group</div>
+                        </div>
+                        <div class="text-zinc-400 text-sm mb-4">Caribbean • Full P&L ownership • 3M MAU • $40M+ turnover</div>
+                        <ul class="space-y-3 text-sm">
+                            <li class="flex gap-3"><i class="fa-solid fa-check text-yellow-400 mt-1"></i> Migrated 2M+ USSD users to mobile wallet with zero downtime</li>
+                            <li class="flex gap-3"><i class="fa-solid fa-check text-yellow-400 mt-1"></i> AI KYC/AML → <5 min onboarding (from days)</li>
+                            <li class="flex gap-3"><i class="fa-solid fa-check text-yellow-400 mt-1"></i> ML churn models → 7% reduction</li>
+                            <li class="flex gap-3"><i class="fa-solid fa-check text-yellow-400 mt-1"></i> Delivered $1.2M EBITDA gain + 15% OpEx cut</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="relative flex gap-8 mb-16">
+                    <div class="w-16 h-16 flex-shrink-0 bg-zinc-900 border border-yellow-400 rounded-2xl flex items-center justify-center z-10">
+                        <span class="text-xs font-medium text-center leading-tight">2016<br><span class="text-yellow-400">–</span><br>2022</span>
+                    </div>
+                    <div class="flex-1 pt-3">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="font-semibold text-xl">Head of Digital Products & Solutions</div>
+                            <div class="px-3 py-1 text-[10px] bg-emerald-500/10 text-emerald-400 rounded-xl">Jazz Pakistan (Veon)</div>
+                        </div>
+                        <div class="text-zinc-400 text-sm mb-4">20M+ MAU JazzWorld • JazzCash • Tamasha OTT</div>
+                        <ul class="space-y-3 text-sm">
+                            <li class="flex gap-3"><i class="fa-solid fa-check text-yellow-400 mt-1"></i> Led migration of JazzCash to microservices (Huawei + Temenos)</li>
+                            <li class="flex gap-3"><i class="fa-solid fa-check text-yellow-400 mt-1"></i> Built Tamasha OTT (4M+ MAU)</li>
+                            <li class="flex gap-3"><i class="fa-solid fa-check text-yellow-400 mt-1"></i> 14% reduction in customer ops FTE via RPA</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="relative flex gap-8">
+                    <div class="w-16 h-16 flex-shrink-0 bg-zinc-900 border border-yellow-400 rounded-2xl flex items-center justify-center z-10">
+                        <span class="text-xs font-medium text-center leading-tight">2013<br><span class="text-yellow-400">–</span><br>2016</span>
+                    </div>
+                    <div class="flex-1 pt-3">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="font-semibold text-xl">Digital Product Specialist</div>
+                            <div class="px-3 py-1 text-[10px] bg-emerald-500/10 text-emerald-400 rounded-xl">Telenor Pakistan</div>
+                        </div>
+                        <div class="text-zinc-400 text-sm mb-4">EasyPaisa — Pakistan’s first digital payments platform</div>
+                        <ul class="space-y-3 text-sm">
+                            <li class="flex gap-3"><i class="fa-solid fa-check text-yellow-400 mt-1"></i> Integrated telco products driving 5% revenue uplift</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED PROJECTS -->
+    <section id="projects" class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="uppercase text-xs tracking-widest text-yellow-400">BUILT & SCALED</span>
+                <h2 class="text-4xl font-semibold">Flagship Platforms</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8" id="projects-grid">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="py-20 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-baseline mb-12">
+                <div>
+                    <span class="uppercase text-xs tracking-widest text-yellow-400">PRODUCT FLOWS & SCREENS</span>
+                    <h2 class="text-4xl font-semibold">Screenshots & Journeys</h2>
+                </div>
+                <p class="max-w-xs text-zinc-400 text-sm">Real interfaces and flows from MonCash, JazzCash, JazzWorld & Tamasha</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/05/23/bd/0523bdd7-f182-a250-a42e-aed6e504ed2b/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/1200x630wa.png" alt="MonCash App Icon" class="rounded-3xl shadow-xl hover:scale-105 transition-transform">
+                <img src="https://moncashdfs.com/assets/files/about/mobile.png" alt="MonCash Wallet Screen" class="rounded-3xl shadow-xl hover:scale-105 transition-transform">
+                <img src="https://brochure-uat.mc.moncashdfs.com/assets/files/home/slider/send-cash.png" alt="MonCash Send Cash Flow" class="rounded-3xl shadow-xl hover:scale-105 transition-transform">
+                <img src="https://images.ctfassets.net/3mfhvx41g7sp/pjdqZeJ9LvAZshygijA2A/e0b49c8c2596b63e2c5d593e186a3081/Screenshot_2023-05-30_at_6.58.10_PM.png" alt="JazzCash Wallet & Transfer" class="rounded-3xl shadow-xl hover:scale-105 transition-transform">
+                <img src="https://images.ctfassets.net/3mfhvx41g7sp/lDcL3Ic06n9Q77IqCmE8E/d8e15355a70a3cec3ac1f4978d5707e4/Frame_14394.jpg" alt="JazzCash Payments Flow" class="rounded-3xl shadow-xl hover:scale-105 transition-transform">
+                <img src="https://evampsaanga.com/wp-content/webpc-passthru.php?src=https://evampsaanga.com/wp-content/uploads/2022/10/Group-4559.png&nocache=1" alt="JazzWorld Dashboard" class="rounded-3xl shadow-xl hover:scale-105 transition-transform">
+                <img src="https://dxbapps.com/blog/uploads/post_image/26200718567573.webp" alt="Tamasha Streaming Interface" class="rounded-3xl shadow-xl hover:scale-105 transition-transform">
+            </div>
+        </div>
+    </section>
+
+    <!-- ARCHITECTURE -->
+    <section id="architecture" class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="uppercase text-xs tracking-widest text-yellow-400">SYSTEM DESIGN & ENGINEERING</span>
+                <h2 class="text-4xl font-semibold">Architecture Diagrams</h2>
+                <p class="mt-4 text-zinc-400 max-w-3xl mx-auto">High-level logical & data architectures from flagship platforms — showcasing distributed systems, cloud-native design (AWS), microservices, ML pipelines, and compliance-grade infrastructure.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="diagram-card bg-zinc-950 border border-zinc-800 rounded-3xl overflow-hidden cursor-pointer" onclick="showDiagram('MonCash Mobile Application Logical Architecture', 'https://your-repo-or-direct-link/moncash-mobile-logical-architecture.png')">
+                    <img src="https://your-repo-or-direct-link/moncash-mobile-logical-architecture.png" alt="MonCash Mobile App Logical Architecture" class="w-full diagram-thumb">
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg">MonCash Mobile App Logical Architecture</h3>
+                        <p class="text-sm text-zinc-400 mt-2">AWS-hosted microservices (Node.js + ECS/Fargate), WSO2 API/ESB, MongoDB Atlas, third-party integrations...</p>
+                    </div>
+                </div>
+
+                <div class="diagram-card bg-zinc-950 border border-zinc-800 rounded-3xl overflow-hidden cursor-pointer" onclick="showDiagram('MonCash Data Warehouse, Reporting & AI/ML Architecture', 'https://your-repo-or-direct-link/moncash-data-ai-ml-architecture.png')">
+                    <img src="https://your-repo-or-direct-link/moncash-data-ai-ml-architecture.png" alt="MonCash Data Warehouse & AI/ML Architecture" class="w-full diagram-thumb">
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg">Data Warehouse, Reporting & AI/ML</h3>
+                        <p class="text-sm text-zinc-400 mt-2">Ingestion (S3, Kinesis), Redshift warehouse, SageMaker ML platform, Bedrock GenAI...</p>
+                    </div>
+                </div>
+
+                <div class="diagram-card bg-zinc-950 border border-zinc-800 rounded-3xl overflow-hidden cursor-pointer" onclick="showDiagram('MonCash Digital-first End-to-End Solution', 'https://your-repo-or-direct-link/moncash-end-to-end-web-app-ussd.png')">
+                    <img src="https://your-repo-or-direct-link/moncash-end-to-end-web-app-ussd.png" alt="MonCash End-to-End via Web/App/USSD" class="w-full diagram-thumb">
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg">End-to-End Solution (Web / App / USSD)</h3>
+                        <p class="text-sm text-zinc-400 mt-2">Native apps (Kotlin/Swift), 200+ Node.js microservices, WSO2 APIM, cloud-native scalability...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECH STACK -->
+    <section id="skills" class="py-20 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-center text-4xl font-semibold mb-12">Core Technology & Leadership Capabilities</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-zinc-950 p-8 rounded-3xl">
+                    <div class="uppercase text-xs mb-4 text-yellow-400">Engineering</div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Microservices</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Kubernetes</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Python / Java</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">React Native</span>
+                    </div>
+                </div>
+                <div class="bg-zinc-950 p-8 rounded-3xl">
+                    <div class="uppercase text-xs mb-4 text-emerald-400">Data & AI</div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">ML Churn Models</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">AWS Redshift</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Fraud Detection</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Tableau + Mixpanel</span>
+                    </div>
+                </div>
+                <div class="bg-zinc-950 p-8 rounded-3xl">
+                    <div class="uppercase text-xs mb-4 text-sky-400">Security</div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">PCI-DSS</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">KYC/AML AI</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">OWASP MAS</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">GDPR</span>
+                    </div>
+                </div>
+                <div class="bg-zinc-950 p-8 rounded-3xl">
+                    <div class="uppercase text-xs mb-4 text-purple-400">Leadership</div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">P&L Ownership</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Board Reporting</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Vendor Negotiation</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Regulatory Licensing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black py-16">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="text-3xl font-light mb-6">Ready to build the next fintech super app together?</div>
+            <a href="mailto:syedsaadsohail@gmail.com" 
+               class="inline-flex items-center gap-4 bg-yellow-400 text-zinc-950 px-10 py-6 rounded-3xl text-lg font-semibold hover:scale-105 transition-all">
+                LET'S TALK
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            
+            <div class="mt-16 text-xs text-zinc-500">
+                © 2026 Syed Saad Sohail • Built as a single-file portfolio • Host on GitHub Pages
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div id="project-modal" class="hidden fixed inset-0 bg-black/90 flex items-center justify-center z-[100] p-6 overflow-auto">
+        <div class="modal bg-zinc-900 max-w-5xl w-full rounded-3xl overflow-hidden relative">
+            <div class="flex justify-end p-6 border-b border-zinc-800">
+                <button onclick="closeModal()" class="text-3xl text-zinc-400 hover:text-white">✕</button>
+            </div>
+            <div id="modal-content" class="p-8">
+                <!-- JS injected -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const projects = [
+            {
+                id: 1,
+                title: "MonCash Super App",
+                company: "Digicel Group",
+                period: "2022–2025",
+                impact: "3M MAU • $40M+ turnover • $1.2M EBITDA",
+                desc: "Full P&L ownership of Digicel’s flagship mobile wallet across Haiti & Jamaica. Migrated 2M+ legacy USSD users, built AI KYC/AML (<5 min onboarding), ML churn prediction (7% reduction), fraud models, and secured fintech licenses. Owned 200+ Node.js microservices on AWS (ECS/Fargate), WSO2 API/ESB, MongoDB Atlas.",
+                tech: ["Node.js", "AWS ECS/Fargate", "WSO2", "SageMaker ML", "Redshift", "PCI-DSS", "KYC AI"],
+                play: "https://play.google.com/store/apps/details?id=com.useboom.htwallet",
+                apple: "https://apps.apple.com/us/app/moncash/id1498332907",
+                image: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/05/23/bd/0523bdd7-f182-a250-a42e-aed6e504ed2b/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/1200x630wa.png"
+            },
+            {
+                id: 2,
+                title: "JazzCash Payments Platform",
+                company: "Jazz Pakistan (Veon)",
+                period: "2016–2022",
+                impact: "Part of 20M+ MAU ecosystem • Scalable payments core",
+                desc: "Led full technology due diligence and migration of legacy JazzCash to modern microservices stack: Huawei Mobile Money core + Temenos T24 banking + WSO2 API gateway for open banking & 3PP integrations. Owned real-time payments, security (PCI-DSS), and integrations driving digital financial inclusion.",
+                tech: ["Microservices", "Huawei Mobile Money", "Temenos T24", "WSO2 API Gateway", "Real-time Analytics"],
+                play: "https://play.google.com/store/apps/details?id=com.techlogix.mobilinkcustomer",
+                apple: "#",
+                image: "https://images.ctfassets.net/3mfhvx41g7sp/pjdqZeJ9LvAZshygijA2A/e0b49c8c2596b63e2c5d593e186a3081/Screenshot_2023-05-30_at_6.58.10_PM.png"
+            },
+            {
+                id: 3,
+                title: "JazzWorld Super App (SIMOSA)",
+                company: "Jazz Pakistan (Veon)",
+                period: "2016–2022",
+                impact: "20M+ MAU • Loyalty, self-service & commerce hub",
+                desc: "Spearheaded engineering for JazzWorld super app encompassing payments (JazzCash integration), gamification, loyalty programs, telco self-service, commerce, and AI chatbot. Delivered 2x faster feature rollouts and 10x testing speed via CI/CD and automation frameworks.",
+                tech: ["React Native", "Node.js", "Event-driven", "Growth Hacking", "UX Labs", "Funnel Analytics"],
+                play: "https://play.google.com/store/apps/details?id=com.techlogix.mobilinkcustomer",
+                apple: "#",
+                image: "https://evampsaanga.com/wp-content/webpc-passthru.php?src=https://evampsaanga.com/wp-content/uploads/2022/10/Group-4559.png&nocache=1"
+            },
+            {
+                id: 4,
+                title: "Tamasha OTT Platform",
+                company: "Jazz Pakistan",
+                period: "2018–2022",
+                impact: "4M+ MAU • Optimized for low-bandwidth markets",
+                desc: "Built and scaled Pakistan’s leading OTT streaming service with resilient CDN, real-time telemetry, performance analytics, content delivery, and gamification features tailored for emerging markets.",
+                tech: ["Node.js", "Firebase", "Telemetry", "CDN Optimization", "Low-bandwidth Streaming"],
+                play: "https://play.google.com/store/apps/details?id=com.spbtv.mobilinktv",
+                apple: "#",
+                image: "https://dxbapps.com/blog/uploads/post_image/26200718567573.webp"
+            }
+        ];
+
+        function renderProjects() {
+            const container = document.getElementById('projects-grid');
+            container.innerHTML = '';
+            projects.forEach(project => {
+                const card = document.createElement('div');
+                card.className = 'project-card bg-zinc-950 border border-zinc-800 rounded-3xl overflow-hidden cursor-pointer';
+                card.innerHTML = `
+                    <img src="${project.image}" class="w-full h-56 object-cover">
+                    <div class="p-7">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <div class="font-semibold text-xl">${project.title}</div>
+                                <div class="text-yellow-400 text-sm">${project.company}</div>
+                            </div>
+                            <div class="text-[10px] bg-zinc-900 px-4 py-2 rounded-2xl text-center leading-none">
+                                ${project.period}
+                            </div>
+                        </div>
+                        <div class="mt-6 text-sm text-emerald-400 font-medium">${project.impact}</div>
+                        <div class="text-xs text-zinc-400 mt-6 line-clamp-3">${project.desc}</div>
+                        <div class="mt-8 flex flex-wrap gap-2">
+                            ${project.tech.map(t => `<span class="text-[10px] bg-zinc-900 px-4 py-1 rounded-2xl">${t}</span>`).join('')}
+                        </div>
+                        <div class="mt-8 text-yellow-400 text-sm flex items-center gap-2 hover:gap-3 transition-all" onclick="showProject(${project.id}); event.stopPropagation()">
+                            VIEW FULL CASE <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                `;
+                card.onclick = () => showProject(project.id);
+                container.appendChild(card);
+            });
+        }
+
+        function showProject(id) {
+            const project = projects.find(p => p.id === id);
+            if (!project) return;
+            const modal = document.getElementById('project-modal');
+            const content = document.getElementById('modal-content');
+            content.innerHTML = `
+                <div class="grid md:grid-cols-5 gap-8">
+                    <div class="md:col-span-3">
+                        <img src="${project.image}" class="rounded-2xl w-full">
+                    </div>
+                    <div class="md:col-span-2">
+                        <div class="text-3xl font-semibold">${project.title}</div>
+                        <div class="text-yellow-400">${project.company} • ${project.period}</div>
+                        <div class="mt-8 bg-zinc-950 rounded-2xl p-5 text-sm">
+                            <div class="font-medium mb-3 text-emerald-400">KEY IMPACT</div>
+                            <div class="text-zinc-300">${project.impact}</div>
+                        </div>
+                        <div class="mt-8 text-sm leading-relaxed">${project.desc}</div>
+                        <div class="mt-10">
+                            <div class="text-xs uppercase tracking-widest mb-3">Store Links</div>
+                            <div class="flex flex-col gap-3">
+                                ${project.play !== '#' ? `<a href="${project.play}" target="_blank" class="flex items-center gap-3 border border-zinc-700 hover:border-yellow-400 px-5 py-4 rounded-2xl text-sm"><i class="fa-brands fa-google-play text-2xl"></i><span>Google Play Store</span></a>` : ''}
+                                ${project.apple !== '#' ? `<a href="${project.apple}" target="_blank" class="flex items-center gap-3 border border-zinc-700 hover:border-yellow-400 px-5 py-4 rounded-2xl text-sm"><i class="fa-brands fa-apple text-2xl"></i><span>Apple App Store</span></a>` : ''}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 pt-8 border-t border-zinc-700">
+                    <div class="uppercase text-xs mb-4 text-zinc-400">Tech Stack Used</div>
+                    <div class="flex flex-wrap gap-3">
+                        ${project.tech.map(t => `<span class="px-6 py-3 bg-zinc-800 text-xs rounded-3xl">${t}</span>`).join('')}
+                    </div>
+                </div>
+            `;
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function showDiagram(title, imgSrc) {
+            const modal = document.getElementById('project-modal');
+            const content = document.getElementById('modal-content');
+            content.innerHTML = `
+                <div class="text-3xl font-semibold mb-4">${title}</div>
+                <img src="${imgSrc}" alt="${title}" class="w-full rounded-2xl shadow-2xl border border-zinc-700">
+                <p class="mt-6 text-zinc-300 text-sm">Click outside or × to close. Full-resolution view for detailed inspection.</p>
+            `;
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('project-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        function animateCounters() {
+            document.querySelectorAll('.stat-number').forEach(counter => {
+                const target = parseFloat(counter.getAttribute('data-target'));
+                let count = 0;
+                const increment = target / 60;
+                const timer = setInterval(() => {
+                    count += increment;
+                    if (count >= target) {
+                        count = target;
+                        clearInterval(timer);
+                    }
+                    counter.textContent = Math.floor(count) + (target % 1 !== 0 ? '+' : '');
+                }, 30);
+            });
+        }
+
+        document.getElementById('project-modal').addEventListener('click', e => {
+            if (e.target.id === 'project-modal') closeModal();
+        });
+
+        document.addEventListener('keydown', e => {
+            if (e.key === "Escape") closeModal();
+        });
+
+        window.onload = function() {
+            renderProjects();
+            animateCounters();
+        };
+    </script>
+</body>
+</html>
