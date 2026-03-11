@@ -492,117 +492,98 @@
 
     <script>
         const projects = [
-            {
-                id: 1,
-                title: "MonCash Super App",
-                company: "Digicel Group",
-                period: "Feb 2022 – Dec 2025",
-                impact: "3M MAU • $40M+ turnover • $1.2M EBITDA",
-                desc: "Full P&L ownership of Digicel’s flagship mobile wallet across Haiti & Jamaica. Migrated 2M+ legacy USSD users, built AI KYC/AML (<5 min onboarding), ML churn prediction (7% reduction), fraud models, and secured fintech licenses. Owned 200+ Node.js microservices on AWS (ECS/Fargate), WSO2 API/ESB, MongoDB Atlas.",
-                tech: [
-                    "React (Web)", "Kotlin (Android)", "Swift (iOS)", 
-                    "Node.js (Backend)", "MongoDB", "Prometheus", 
-                    "WSO2 API", "AWS", "Redshift (DWH)", 
-                    "Glue / Transfer Family (ETL)", "Tableau", 
-                    "Python Dashboards", "Swrve", "SageMaker ML"
-                ],
-                play: "https://play.google.com/store/apps/details?id=com.useboom.htwallet",
-                apple: "https://apps.apple.com/us/app/moncash/id1498332907",
-                image: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/05/23/bd/0523bdd7-f182-a250-a42e-aed6e504ed2b/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/1200x630wa.png"
-            },
-            {
-                id: 2,
-                title: "JazzCash Payments Platform",
-                company: "Jazz Pakistan (Veon)",
-                period: "Oct 2016 – Sep 2021",
-                impact: "Part of 20M+ MAU ecosystem • Scalable payments core",
-                desc: "Led full technology due diligence and migration of legacy JazzCash to modern microservices stack: Huawei Mobile Money core + Temenos T24 banking + WSO2 API gateway for open banking & 3PP integrations. Owned real-time payments, security (PCI-DSS), and integrations driving digital financial inclusion.",
-                tech: [
-                    "React (Web)", "Kotlin (Android)", "Swift (iOS)", 
-                    "IBM / Huawei (Backend)", "Prometheus", 
-                    "IBM (DB & ETL)", "WSO2 / IBM API", 
-                    "On-prem Cloud", "Firebase", 
-                    "Custom Dashboards & Analytics"
-                ],
-                play: "https://play.google.com/store/apps/details?id=com.techlogix.mobilinkcustomer",
-                apple: "#",
-                image: "https://images.ctfassets.net/3mfhvx41g7sp/pjdqZeJ9LvAZshygijA2A/e0b49c8c2596b63e2c5d593e186a3081/Screenshot_2023-05-30_at_6.58.10_PM.png"
-            },
-            {
-                id: 3,
-                title: "JazzWorld Super App (SIMOSA)",
-                company: "Jazz Pakistan (Veon)",
-                period: "Oct 2016 – Feb 2022",
-                impact: "20M+ MAU • Loyalty, self-service & commerce hub",
-                desc: "Spearheaded engineering for JazzWorld super app encompassing payments (JazzCash integration), gamification, loyalty programs, telco self-service, commerce, and AI chatbot. Delivered 2x faster feature rollouts and 10x testing speed via CI/CD and automation frameworks.",
-                tech: [
-                    "Angular / React (Web)", "Kotlin (Android)", "Swift (iOS)", 
-                    "Java Spring Boot (Backend)", "MariaDB", 
-                    "Prometheus", "WSO2 API", 
-                    "Docker (On-prem virtualization)", 
-                    "IBM / Firebase (DWH & Analytics)", 
-                    "PowerBI", "Mixpanel", "Custom Dashboards"
-                ],
-                play: "https://play.google.com/store/apps/details?id=com.jazz.jazzworld",
-                apple: "https://apps.apple.com/us/app/simosa-jazz-world/id1441912305",
-                image: "https://evampsaanga.com/wp-content/webpc-passthru.php?src=https://evampsaanga.com/wp-content/uploads/2022/10/Group-4559.png&nocache=1"
-            },
-            {
-                id: 4,
-                title: "Tamasha OTT Platform",
-                company: "Jazz Pakistan",
-                period: "Jul 2021 – Feb 2022",
-                impact: "4M+ MAU • Optimized for low-bandwidth markets",
-                desc: "Built and scaled Pakistan’s leading OTT streaming service with resilient CDN, real-time telemetry, performance analytics, content delivery, and gamification features tailored for emerging markets.",
-                tech: [
-                    "React (Web)", "Kotlin (Android)", "Swift (iOS)", 
-                    "Java (Backend)", "Prometheus", 
-                    "Custom API Manager", "Firebase", 
-                    "Hybrid Cloud (On-prem / AWS)", 
-                    "SQL / Firebase (Data)", 
-                    "Custom Dashboards & Analytics"
-                ],
-                play: "https://play.google.com/store/apps/details?id=com.spbtv.mobilinktv",
-                apple: "#",
-                image: "https://dxbapps.com/blog/uploads/post_image/26200718567573.webp"
-            }
-        ];
+    {
+        id: 1,
+        title: "MonCash Super App",
+        logo: "https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/images/moncash-logo.png",
+        company: "Digicel Group",
+        period: "Feb 2022 – Dec 2025",
+        impact: "3M MAU • $40M+ turnover • $1.2M EBITDA",
+        desc: "Full P&L ownership of Digicel’s flagship mobile wallet across Haiti & Jamaica. Migrated 2M+ legacy USSD users, built AI KYC/AML (<5 min onboarding), ML churn prediction (7% reduction), fraud models, and secured fintech licenses.",
+        tech: ["React (Web)", "Kotlin (Android)", "Swift (iOS)", "Node.js", "MongoDB", "Prometheus", "WSO2 API", "AWS", "Redshift", "Glue ETL", "Tableau", "SageMaker ML"],
+        play: "https://play.google.com/store/apps/details?id=com.useboom.htwallet",
+        apple: "https://apps.apple.com/us/app/moncash/id1498332907",
+        image: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/05/23/bd/0523bdd7-f182-a250-a42e-aed6e504ed2b/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/1200x630wa.png"
+    },
+    {
+        id: 2,
+        title: "JazzCash Payments Platform",
+        logo: "https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/images/jazzcash-logo.png",
+        company: "Jazz Pakistan (Veon)",
+        period: "Oct 2016 – Sep 2021",
+        impact: "Part of 20M+ MAU ecosystem • Scalable payments core",
+        desc: "Led full technology due diligence and migration of legacy JazzCash to modern microservices stack: Huawei Mobile Money + Temenos T24 + WSO2 API gateway for open banking & 3PP integrations.",
+        tech: ["React (Web)", "Kotlin (Android)", "Swift (iOS)", "IBM / Huawei", "Prometheus", "IBM DB & ETL", "WSO2 / IBM API", "On-prem", "Firebase", "Custom Analytics"],
+        play: "https://play.google.com/store/apps/details?id=com.techlogix.mobilinkcustomer",
+        apple: "#",
+        image: "https://images.ctfassets.net/3mfhvx41g7sp/pjdqZeJ9LvAZshygijA2A/e0b49c8c2596b63e2c5d593e186a3081/Screenshot_2023-05-30_at_6.58.10_PM.png"
+    },
+    {
+        id: 3,
+        title: "JazzWorld Super App (SIMOSA)",
+        logo: "https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/images/jazzworld-simosa-logo.png",
+        company: "Jazz Pakistan (Veon)",
+        period: "Oct 2016 – Feb 2022",
+        impact: "20M+ MAU • Loyalty, self-service & commerce hub",
+        desc: "Spearheaded engineering for JazzWorld super app: payments integration, gamification, loyalty, telco self-service, commerce, AI chatbot. 2× faster rollouts, 10× testing speed.",
+        tech: ["Angular / React", "Kotlin (Android)", "Swift (iOS)", "Java Spring Boot", "MariaDB", "Prometheus", "WSO2 API", "Docker", "IBM / Firebase", "PowerBI", "Mixpanel"],
+        play: "https://play.google.com/store/apps/details?id=com.jazz.jazzworld",
+        apple: "https://apps.apple.com/us/app/simosa-jazz-world/id1441912305",
+        image: "https://evampsaanga.com/wp-content/webpc-passthru.php?src=https://evampsaanga.com/wp-content/uploads/2022/10/Group-4559.png&nocache=1"
+    },
+    {
+        id: 4,
+        title: "Tamasha OTT Platform",
+        logo: "https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/images/tamasha-logo.png",
+        company: "Jazz Pakistan",
+        period: "Jul 2021 – Feb 2022",
+        impact: "4M+ MAU • Optimized for low-bandwidth markets",
+        desc: "Built and scaled Pakistan’s leading OTT streaming service: resilient CDN, real-time telemetry, performance analytics, content delivery, gamification for emerging markets.",
+        tech: ["React (Web)", "Kotlin (Android)", "Swift (iOS)", "Java", "Prometheus", "Custom API Manager", "Firebase", "Hybrid Cloud", "SQL / Firebase", "Custom Dashboards"],
+        play: "https://play.google.com/store/apps/details?id=com.spbtv.mobilinktv",
+        apple: "#",
+        image: "https://dxbapps.com/blog/uploads/post_image/26200718567573.webp"
+    }
+];
 
-        function renderProjects() {
-            const container = document.getElementById('projects-grid');
-            container.innerHTML = '';
-            projects.forEach(project => {
-                const card = document.createElement('div');
-                card.className = 'project-card bg-zinc-950 border border-zinc-800 rounded-3xl overflow-hidden cursor-pointer';
-                card.innerHTML = `
-                    <img src="${project.image}" class="w-full h-56 object-cover">
-                    <div class="p-7">
-                        <div class="flex justify-between items-start">
-                            <div>
-                                <div class="font-semibold text-xl">${project.title}</div>
-                                <div class="text-yellow-400 text-sm">${project.company}</div>
-                            </div>
-                            <div class="text-[10px] bg-zinc-900 px-4 py-2 rounded-2xl text-center leading-none">
-                                ${project.period}
-                            </div>
-                        </div>
-                        <div class="mt-6 text-sm text-emerald-400 font-medium">${project.impact}</div>
-                        <div class="text-xs text-zinc-400 mt-6 line-clamp-3">${project.desc}</div>
-                        
-                        <div class="mt-8 flex flex-wrap gap-2">
-                            ${project.tech.slice(0,7).map(t => `<span class="text-[10px] bg-zinc-900 px-4 py-1 rounded-2xl">${t}</span>`).join('')}
-                            ${project.tech.length > 7 ? '<span class="text-[10px] bg-zinc-800 px-4 py-1 rounded-2xl">+' + (project.tech.length - 7) + '</span>' : ''}
-                        </div>
-                        
-                        <div class="mt-8 text-yellow-400 text-sm flex items-center gap-2 hover:gap-3 transition-all" onclick="showProject(${project.id}); event.stopPropagation()">
-                            VIEW FULL CASE <i class="fa-solid fa-arrow-right"></i>
-                        </div>
+function renderProjects() {
+    const container = document.getElementById('projects-grid');
+    container.innerHTML = '';
+
+    projects.forEach(project => {
+        const card = document.createElement('div');
+        card.className = 'project-card bg-zinc-950 border border-zinc-800 rounded-3xl overflow-hidden cursor-pointer flex flex-col';
+        card.innerHTML = `
+            <div class="bg-zinc-900 p-8 flex justify-center items-center border-b border-zinc-800">
+                <img src="${project.logo}" alt="${project.title} Logo" class="max-h-24 w-auto object-contain">
+            </div>
+            <div class="p-7 flex flex-col flex-grow">
+                <div class="flex justify-between items-start mb-4">
+                    <div>
+                        <div class="font-semibold text-xl">${project.title}</div>
+                        <div class="text-yellow-400 text-sm">${project.company}</div>
                     </div>
-                `;
-                card.onclick = () => showProject(project.id);
-                container.appendChild(card);
-            });
-        }
+                    <div class="text-[10px] bg-zinc-900 px-4 py-2 rounded-2xl text-center leading-none">
+                        ${project.period}
+                    </div>
+                </div>
+                <div class="text-sm text-emerald-400 font-medium mb-4">${project.impact}</div>
+                <div class="text-xs text-zinc-400 mb-6 line-clamp-4">${project.desc}</div>
+                
+                <div class="mt-auto flex flex-wrap gap-2 mb-6">
+                    ${project.tech.slice(0,7).map(t => `<span class="text-[10px] bg-zinc-900 px-4 py-1 rounded-2xl">${t}</span>`).join('')}
+                    ${project.tech.length > 7 ? '<span class="text-[10px] bg-zinc-800 px-4 py-1 rounded-2xl">+' + (project.tech.length - 7) + '</span>' : ''}
+                </div>
+                
+                <div class="text-yellow-400 text-sm flex items-center gap-2 hover:gap-3 transition-all" onclick="showProject(${project.id}); event.stopPropagation()">
+                    VIEW FULL CASE <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+        `;
+        card.onclick = () => showProject(project.id);
+        container.appendChild(card);
+    });
+}
 
         function showProject(id) {
             const project = projects.find(p => p.id === id);
@@ -691,6 +672,7 @@
     </script>
 </body>
 </html>
+
 
 
 
