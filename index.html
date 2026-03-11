@@ -59,7 +59,7 @@
 </head>
 <body class="bg-zinc-950 text-zinc-200">
 
-    <!-- NAV -->
+    <!-- NAVIGATION -->
     <nav class="fixed top-0 left-0 right-0 z-50 bg-zinc-950/80 backdrop-blur-lg border-b border-zinc-800">
         <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
             <div class="flex items-center gap-3">
@@ -74,7 +74,7 @@
                 <a href="#projects" class="hover:text-yellow-400 transition-colors">Projects</a>
                 <a href="#gallery" class="hover:text-yellow-400 transition-colors">Gallery</a>
                 <a href="#architecture" class="hover:text-yellow-400 transition-colors">Architecture</a>
-                <a href="#skills" class="hover:text-yellow-400 transition-colors">Tech</a>
+                <a href="#skills" class="hover:text-yellow-400 transition-colors">Capabilities</a>
             </div>
             
             <a href="mailto:syedsaadsohail@gmail.com" 
@@ -195,7 +195,7 @@
         </div>
     </section>
 
-    <!-- NEW: EDUCATION SECTION -->
+    <!-- EDUCATION -->
     <section id="education" class="py-20">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-12">
@@ -204,7 +204,6 @@
             </div>
 
             <div class="max-w-4xl mx-auto space-y-12">
-                <!-- MBA -->
                 <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-10">
                     <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
                         <div>
@@ -218,7 +217,6 @@
                     </div>
                 </div>
 
-                <!-- BSc -->
                 <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-10">
                     <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
                         <div>
@@ -315,9 +313,7 @@
                 <h2 class="text-4xl font-semibold">Flagship Platforms</h2>
             </div>
             
-            <div class="grid md:grid-cols-3 gap-8" id="projects-grid">
-                <!-- Populated by JS -->
-            </div>
+            <div class="grid md:grid-cols-3 gap-8" id="projects-grid"></div>
         </div>
     </section>
 
@@ -354,24 +350,24 @@
             </div>
             
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="diagram-card bg-zinc-950 border border-zinc-800 rounded-3xl overflow-hidden cursor-pointer" onclick="showDiagram('MonCash Mobile Application Logical Architecture', 'https://your-repo-or-direct-link/moncash-mobile-logical-architecture.png')">
-                    <img src="https://your-repo-or-direct-link/moncash-mobile-logical-architecture.png" alt="MonCash Mobile App Logical Architecture" class="w-full diagram-thumb">
+                <div class="diagram-card bg-zinc-950 border border-zinc-800 rounded-3xl overflow-hidden cursor-pointer" onclick="showDiagram('MonCash Mobile Application Logical Architecture', 'https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/images/moncash-mobile-logical.png')">
+                    <img src="https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/images/moncash-mobile-logical.png" alt="MonCash Mobile App Logical Architecture" class="w-full diagram-thumb">
                     <div class="p-6">
                         <h3 class="font-semibold text-lg">MonCash Mobile App Logical Architecture</h3>
                         <p class="text-sm text-zinc-400 mt-2">AWS-hosted microservices (Node.js + ECS/Fargate), WSO2 API/ESB, MongoDB Atlas, third-party integrations...</p>
                     </div>
                 </div>
 
-                <div class="diagram-card bg-zinc-950 border border-zinc-800 rounded-3xl overflow-hidden cursor-pointer" onclick="showDiagram('MonCash Data Warehouse, Reporting & AI/ML Architecture', 'https://your-repo-or-direct-link/moncash-data-ai-ml-architecture.png')">
-                    <img src="https://your-repo-or-direct-link/moncash-data-ai-ml-architecture.png" alt="MonCash Data Warehouse & AI/ML Architecture" class="w-full diagram-thumb">
+                <div class="diagram-card bg-zinc-950 border border-zinc-800 rounded-3xl overflow-hidden cursor-pointer" onclick="showDiagram('MonCash Data Warehouse, Reporting & AI/ML Architecture', 'https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/images/moncash-data-ai-ml.png')">
+                    <img src="https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/images/moncash-data-ai-ml.png" alt="MonCash Data Warehouse & AI/ML Architecture" class="w-full diagram-thumb">
                     <div class="p-6">
                         <h3 class="font-semibold text-lg">Data Warehouse, Reporting & AI/ML</h3>
                         <p class="text-sm text-zinc-400 mt-2">Ingestion (S3, Kinesis), Redshift warehouse, SageMaker ML platform, Bedrock GenAI...</p>
                     </div>
                 </div>
 
-                <div class="diagram-card bg-zinc-950 border border-zinc-800 rounded-3xl overflow-hidden cursor-pointer" onclick="showDiagram('MonCash Digital-first End-to-End Solution', 'https://your-repo-or-direct-link/moncash-end-to-end-web-app-ussd.png')">
-                    <img src="https://your-repo-or-direct-link/moncash-end-to-end-web-app-ussd.png" alt="MonCash End-to-End via Web/App/USSD" class="w-full diagram-thumb">
+                <div class="diagram-card bg-zinc-950 border border-zinc-800 rounded-3xl overflow-hidden cursor-pointer" onclick="showDiagram('MonCash Digital-first End-to-End Solution', 'https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/images/moncash-end-to-end.png')">
+                    <img src="https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/images/moncash-end-to-end.png" alt="MonCash End-to-End via Web/App/USSD" class="w-full diagram-thumb">
                     <div class="p-6">
                         <h3 class="font-semibold text-lg">End-to-End Solution (Web / App / USSD)</h3>
                         <p class="text-sm text-zinc-400 mt-2">Native apps (Kotlin/Swift), 200+ Node.js microservices, WSO2 APIM, cloud-native scalability...</p>
@@ -381,48 +377,91 @@
         </div>
     </section>
 
-    <!-- TECH STACK -->
+    <!-- UPDATED: CORE CAPABILITIES – now 6 columns with more CTO-level topics -->
     <section id="skills" class="py-20 bg-zinc-900">
         <div class="max-w-7xl mx-auto px-6">
             <h2 class="text-center text-4xl font-semibold mb-12">Core Technology & Leadership Capabilities</h2>
             
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <div class="bg-zinc-950 p-8 rounded-3xl">
-                    <div class="uppercase text-xs mb-4 text-yellow-400">Engineering</div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                
+                <!-- 1. Engineering & Architecture -->
+                <div class="bg-zinc-950 p-8 rounded-3xl border border-zinc-800">
+                    <div class="uppercase text-xs mb-4 text-yellow-400">Engineering & Architecture</div>
                     <div class="flex flex-wrap gap-2">
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Distributed Systems</span>
                         <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Microservices</span>
-                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Kubernetes</span>
-                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Python / Java</span>
-                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">React Native</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">High-Availability</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Kubernetes / ECS</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Event-Driven</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Mobile (Kotlin/Swift)</span>
                     </div>
                 </div>
-                <div class="bg-zinc-950 p-8 rounded-3xl">
-                    <div class="uppercase text-xs mb-4 text-emerald-400">Data & AI</div>
+
+                <!-- 2. Data, AI & ML -->
+                <div class="bg-zinc-950 p-8 rounded-3xl border border-zinc-800">
+                    <div class="uppercase text-xs mb-4 text-emerald-400">Data, AI & ML</div>
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">ML Churn Models</span>
-                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">AWS Redshift</span>
-                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Fraud Detection</span>
-                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Tableau + Mixpanel</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Redshift / Data Lakes</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">SageMaker / Bedrock</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Fraud & Churn ML</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">GenAI / RAG</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">MLOps & Model Monitoring</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Tableau / Mixpanel</span>
                     </div>
                 </div>
-                <div class="bg-zinc-950 p-8 rounded-3xl">
-                    <div class="uppercase text-xs mb-4 text-sky-400">Security</div>
+
+                <!-- 3. Security, Compliance & Risk -->
+                <div class="bg-zinc-950 p-8 rounded-3xl border border-zinc-800">
+                    <div class="uppercase text-xs mb-4 text-sky-400">Security & Compliance</div>
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">PCI-DSS</span>
-                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">KYC/AML AI</span>
-                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">OWASP MAS</span>
-                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">GDPR</span>
-                    </div>
-                </div>
-                <div class="bg-zinc-950 p-8 rounded-3xl">
-                    <div class="uppercase text-xs mb-4 text-purple-400">Leadership</div>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">P&L Ownership</span>
-                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Board Reporting</span>
-                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Vendor Negotiation</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">PCI-DSS Level 1</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">KYC/AML Automation</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">OWASP MAS / Top 10</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">GDPR / Data Privacy</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Zero Trust / WAF</span>
                         <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Regulatory Licensing</span>
                     </div>
                 </div>
+
+                <!-- 4. Platform & Scalability -->
+                <div class="bg-zinc-950 p-8 rounded-3xl border border-zinc-800">
+                    <div class="uppercase text-xs mb-4 text-purple-400">Platform & Scalability</div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">AWS / Hybrid Cloud</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Auto-scaling & Resilience</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Observability (CloudWatch, Prometheus)</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">CI/CD & GitOps</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Cost Optimization</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Global Multi-market</span>
+                    </div>
+                </div>
+
+                <!-- 5. Product, Growth & Metrics -->
+                <div class="bg-zinc-950 p-8 rounded-3xl border border-zinc-800">
+                    <div class="uppercase text-xs mb-4 text-rose-400">Product & Growth</div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Growth Hacking / A/B</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Funnel & Cohort Analytics</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">OKRs & North Star Metrics</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Experimentation Culture</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Super App Strategy</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Customer 360 / Personalization</span>
+                    </div>
+                </div>
+
+                <!-- 6. People, Org & Strategy -->
+                <div class="bg-zinc-950 p-8 rounded-3xl border border-zinc-800">
+                    <div class="uppercase text-xs mb-4 text-indigo-400">People, Org & Strategy</div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Engineering Org Design</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Talent Acquisition & Retention</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Tech Vision & Roadmap</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Board-level Reporting</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">P&L & Budget Ownership</span>
+                        <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Vendor & Partnership Strategy</span>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -449,9 +488,7 @@
             <div class="flex justify-end p-6 border-b border-zinc-800">
                 <button onclick="closeModal()" class="text-3xl text-zinc-400 hover:text-white">✕</button>
             </div>
-            <div id="modal-content" class="p-8">
-                <!-- JS injected -->
-            </div>
+            <div id="modal-content" class="p-8"></div>
         </div>
     </div>
 
@@ -461,10 +498,16 @@
                 id: 1,
                 title: "MonCash Super App",
                 company: "Digicel Group",
-                period: "2022–2025",
+                period: "Feb 2022 – Dec 2025",
                 impact: "3M MAU • $40M+ turnover • $1.2M EBITDA",
                 desc: "Full P&L ownership of Digicel’s flagship mobile wallet across Haiti & Jamaica. Migrated 2M+ legacy USSD users, built AI KYC/AML (<5 min onboarding), ML churn prediction (7% reduction), fraud models, and secured fintech licenses. Owned 200+ Node.js microservices on AWS (ECS/Fargate), WSO2 API/ESB, MongoDB Atlas.",
-                tech: ["Node.js", "AWS ECS/Fargate", "WSO2", "SageMaker ML", "Redshift", "PCI-DSS", "KYC AI"],
+                tech: [
+                    "React (Web)", "Kotlin (Android)", "Swift (iOS)", 
+                    "Node.js (Backend)", "MongoDB", "Prometheus", 
+                    "WSO2 API", "AWS", "Redshift (DWH)", 
+                    "Glue / Transfer Family (ETL)", "Tableau", 
+                    "Python Dashboards", "Swrve", "SageMaker ML"
+                ],
                 play: "https://play.google.com/store/apps/details?id=com.useboom.htwallet",
                 apple: "https://apps.apple.com/us/app/moncash/id1498332907",
                 image: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/05/23/bd/0523bdd7-f182-a250-a42e-aed6e504ed2b/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/1200x630wa.png"
@@ -473,10 +516,16 @@
                 id: 2,
                 title: "JazzCash Payments Platform",
                 company: "Jazz Pakistan (Veon)",
-                period: "2016–2022",
+                period: "Oct 2016 – Sep 2021",
                 impact: "Part of 20M+ MAU ecosystem • Scalable payments core",
                 desc: "Led full technology due diligence and migration of legacy JazzCash to modern microservices stack: Huawei Mobile Money core + Temenos T24 banking + WSO2 API gateway for open banking & 3PP integrations. Owned real-time payments, security (PCI-DSS), and integrations driving digital financial inclusion.",
-                tech: ["Microservices", "Huawei Mobile Money", "Temenos T24", "WSO2 API Gateway", "Real-time Analytics"],
+                tech: [
+                    "React (Web)", "Kotlin (Android)", "Swift (iOS)", 
+                    "IBM / Huawei (Backend)", "Prometheus", 
+                    "IBM (DB & ETL)", "WSO2 / IBM API", 
+                    "On-prem Cloud", "Firebase", 
+                    "Custom Dashboards & Analytics"
+                ],
                 play: "https://play.google.com/store/apps/details?id=com.techlogix.mobilinkcustomer",
                 apple: "#",
                 image: "https://images.ctfassets.net/3mfhvx41g7sp/pjdqZeJ9LvAZshygijA2A/e0b49c8c2596b63e2c5d593e186a3081/Screenshot_2023-05-30_at_6.58.10_PM.png"
@@ -485,22 +534,36 @@
                 id: 3,
                 title: "JazzWorld Super App (SIMOSA)",
                 company: "Jazz Pakistan (Veon)",
-                period: "2016–2022",
+                period: "Oct 2016 – Feb 2022",
                 impact: "20M+ MAU • Loyalty, self-service & commerce hub",
                 desc: "Spearheaded engineering for JazzWorld super app encompassing payments (JazzCash integration), gamification, loyalty programs, telco self-service, commerce, and AI chatbot. Delivered 2x faster feature rollouts and 10x testing speed via CI/CD and automation frameworks.",
-                tech: ["React Native", "Node.js", "Event-driven", "Growth Hacking", "UX Labs", "Funnel Analytics"],
-                play: "https://play.google.com/store/apps/details?id=com.techlogix.mobilinkcustomer",
-                apple: "#",
+                tech: [
+                    "Angular / React (Web)", "Kotlin (Android)", "Swift (iOS)", 
+                    "Java Spring Boot (Backend)", "MariaDB", 
+                    "Prometheus", "WSO2 API", 
+                    "Docker (On-prem virtualization)", 
+                    "IBM / Firebase (DWH & Analytics)", 
+                    "PowerBI", "Mixpanel", "Custom Dashboards"
+                ],
+                play: "https://play.google.com/store/apps/details?id=com.jazz.jazzworld",
+                apple: "https://apps.apple.com/us/app/simosa-jazz-world/id1441912305",
                 image: "https://evampsaanga.com/wp-content/webpc-passthru.php?src=https://evampsaanga.com/wp-content/uploads/2022/10/Group-4559.png&nocache=1"
             },
             {
                 id: 4,
                 title: "Tamasha OTT Platform",
                 company: "Jazz Pakistan",
-                period: "2018–2022",
+                period: "Jul 2021 – Feb 2022",
                 impact: "4M+ MAU • Optimized for low-bandwidth markets",
                 desc: "Built and scaled Pakistan’s leading OTT streaming service with resilient CDN, real-time telemetry, performance analytics, content delivery, and gamification features tailored for emerging markets.",
-                tech: ["Node.js", "Firebase", "Telemetry", "CDN Optimization", "Low-bandwidth Streaming"],
+                tech: [
+                    "React (Web)", "Kotlin (Android)", "Swift (iOS)", 
+                    "Java (Backend)", "Prometheus", 
+                    "Custom API Manager", "Firebase", 
+                    "Hybrid Cloud (On-prem / AWS)", 
+                    "SQL / Firebase (Data)", 
+                    "Custom Dashboards & Analytics"
+                ],
                 play: "https://play.google.com/store/apps/details?id=com.spbtv.mobilinktv",
                 apple: "#",
                 image: "https://dxbapps.com/blog/uploads/post_image/26200718567573.webp"
@@ -527,9 +590,12 @@
                         </div>
                         <div class="mt-6 text-sm text-emerald-400 font-medium">${project.impact}</div>
                         <div class="text-xs text-zinc-400 mt-6 line-clamp-3">${project.desc}</div>
+                        
                         <div class="mt-8 flex flex-wrap gap-2">
-                            ${project.tech.map(t => `<span class="text-[10px] bg-zinc-900 px-4 py-1 rounded-2xl">${t}</span>`).join('')}
+                            ${project.tech.slice(0,7).map(t => `<span class="text-[10px] bg-zinc-900 px-4 py-1 rounded-2xl">${t}</span>`).join('')}
+                            ${project.tech.length > 7 ? '<span class="text-[10px] bg-zinc-800 px-4 py-1 rounded-2xl">+' + (project.tech.length - 7) + '</span>' : ''}
                         </div>
+                        
                         <div class="mt-8 text-yellow-400 text-sm flex items-center gap-2 hover:gap-3 transition-all" onclick="showProject(${project.id}); event.stopPropagation()">
                             VIEW FULL CASE <i class="fa-solid fa-arrow-right"></i>
                         </div>
@@ -568,7 +634,7 @@
                     </div>
                 </div>
                 <div class="mt-12 pt-8 border-t border-zinc-700">
-                    <div class="uppercase text-xs mb-4 text-zinc-400">Tech Stack Used</div>
+                    <div class="uppercase text-xs mb-4 text-zinc-400">Full Technology Stack</div>
                     <div class="flex flex-wrap gap-3">
                         ${project.tech.map(t => `<span class="px-6 py-3 bg-zinc-800 text-xs rounded-3xl">${t}</span>`).join('')}
                     </div>
