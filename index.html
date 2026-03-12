@@ -8,49 +8,43 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
-        
+       
         :root {
             --primary: 234 179 8;
         }
-        
+       
         body {
             font-family: 'Inter', system-ui, sans-serif;
         }
-        
+       
         .logo-font {
             font-family: 'Space Grotesk', sans-serif;
         }
-
         .hero-bg {
             background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
         }
-
         .timeline-line {
             background: linear-gradient(to bottom, #eab308, #22c55e);
         }
-
         .modal {
             animation: modalPop 0.3s ease forwards;
         }
-        
+       
         @keyframes modalPop {
             from { transform: scale(0.95); opacity: 0; }
             to { transform: scale(1); opacity: 1; }
         }
-
         .project-card, .diagram-card {
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        
+       
         .project-card:hover, .diagram-card:hover {
             transform: translateY(-8px);
             box-shadow: 0 25px 50px -12px rgb(234 179 8 / 0.25);
         }
-
         .stat-number {
             font-variant-numeric: tabular-nums;
         }
-
         .diagram-thumb {
             aspect-ratio: 16/9;
             object-fit: cover;
@@ -66,7 +60,7 @@
                 <div class="w-9 h-9 bg-yellow-500 rounded-2xl flex items-center justify-center text-zinc-950 font-bold text-2xl logo-font">S3</div>
                 <span class="text-2xl font-semibold tracking-tighter logo-font text-white">Syed Saad Sohail</span>
             </div>
-            
+           
             <div class="hidden md:flex items-center gap-8 text-sm font-medium">
                 <a href="#impact" class="hover:text-yellow-400 transition-colors">Impact</a>
                 <a href="#education" class="hover:text-yellow-400 transition-colors">Education</a>
@@ -76,8 +70,8 @@
                 <a href="#architecture" class="hover:text-yellow-400 transition-colors">Architecture</a>
                 <a href="#skills" class="hover:text-yellow-400 transition-colors">Capabilities</a>
             </div>
-            
-            <a href="mailto:syedsaadsohail@gmail.com" 
+           
+            <a href="mailto:syedsaadsohail@gmail.com"
                class="px-6 py-3 bg-yellow-400 hover:bg-yellow-300 text-zinc-950 font-semibold rounded-2xl text-sm flex items-center gap-2 transition-all">
                 <i class="fa-solid fa-envelope"></i>
                 <span>Contact</span>
@@ -93,12 +87,12 @@
                     <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
                     OPEN TO CTO • VP ENGINEERING • VP DATA ROLES (GCC preferred)
                 </div>
-                
+               
                 <h1 class="text-6xl md:text-7xl font-semibold tracking-tighter logo-font leading-none text-white mb-4">
                     Syed Saad<br>Sohail
                 </h1>
                 <p class="text-3xl text-zinc-400 font-light mb-8">15 years building fintech super apps & ML platforms • 20M+ MAU • $70M+ turnover</p>
-                
+               
                 <div class="flex flex-wrap gap-4">
                     <a href="https://linkedin.com/in/ssaadsohail" target="_blank"
                        class="flex items-center gap-3 bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 px-7 py-4 rounded-3xl text-sm font-medium transition-all">
@@ -111,7 +105,7 @@
                         <span>+971 58 584 9626</span>
                     </a>
                 </div>
-                
+               
                 <div class="mt-12 flex items-center gap-8 text-sm">
                     <div>
                         <div class="text-yellow-400 text-xs tracking-widest">CURRENTLY IN</div>
@@ -124,17 +118,19 @@
                     </div>
                 </div>
             </div>
-            
+           
             <div class="relative">
                 <div class="aspect-square bg-gradient-to-br from-yellow-400/10 to-transparent rounded-[4rem] p-8 flex items-center justify-center">
                     <div class="relative w-full max-w-md">
-                        <img src="https://raw.githubusercontent.com/saadsohail/product-portfolio/main/images/1015-600x600.png" 
-                             alt="Syed Saad Sohail" 
+                        <img src="https://raw.githubusercontent.com/saadsohail/product-portfolio/main/images/1015-600x600.png"
+                             alt="Syed Saad Sohail"
                              class="rounded-3xl shadow-2xl border border-yellow-400/20">
-                  <!--  <div class="absolute -bottom-6 -right-6 bg-zinc-900 border border-yellow-400 rounded-3xl p-5 text-center shadow-xl">
+                        <!-- Uncomment if you want the MAU badge back
+                        <div class="absolute -bottom-6 -right-6 bg-zinc-900 border border-yellow-400 rounded-3xl p-5 text-center shadow-xl">
                             <div class="text-4xl font-bold text-yellow-400">20M+</div>
                             <div class="text-xs tracking-widest text-zinc-400">MONTHLY ACTIVE USERS</div>
-                        </div> -->
+                        </div>
+                        -->
                     </div>
                 </div>
             </div>
@@ -148,46 +144,46 @@
                 <span class="uppercase text-yellow-400 text-sm tracking-[3px]">IMPACT AT A GLANCE</span>
                 <h2 class="text-4xl font-semibold mt-2">Proven results across 3 continents</h2>
             </div>
-            
+           
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
                 <div class="bg-zinc-950 border border-zinc-800 rounded-3xl p-8 text-center group">
-                    <div class="text-5xl font-semibold text-yellow-400 stat-number" data-target="20">20</div>
-                    <div class="text-sm text-zinc-400 mt-1">MILLION MAU</div>
+                    <div class="text-5xl font-semibold text-yellow-400 stat-number">20M+</div>
+                    <div class="text-sm text-zinc-400 mt-1">MONTHLY ACTIVE USERS</div>
                     <div class="h-px bg-zinc-800 my-6"></div>
                     <div class="text-xs text-zinc-500">MonCash + SIMOSA</div>
                 </div>
-                
+               
                 <div class="bg-zinc-950 border border-zinc-800 rounded-3xl p-8 text-center group">
-                    <div class="text-5xl font-semibold text-emerald-400 stat-number" data-target="70">70</div>
-                    <div class="text-sm text-zinc-400 mt-1">MILLION $ TURNOVER</div>
+                    <div class="text-5xl font-semibold text-emerald-400 stat-number">$70M+</div>
+                    <div class="text-sm text-zinc-400 mt-1">PLATFORM TURNOVER OWNED</div>
                     <div class="h-px bg-zinc-800 my-6"></div>
-                    <div class="text-xs text-zinc-500">Owned platforms</div>
+                    <div class="text-xs text-zinc-500">Across flagship platforms</div>
                 </div>
-                
+               
                 <div class="bg-zinc-950 border border-zinc-800 rounded-3xl p-8 text-center group">
-                    <div class="text-5xl font-semibold text-yellow-400 stat-number" data-target="3.5">0</div>
-                    <div class="text-sm text-zinc-400 mt-1">MILLION $ EBITDA</div>
+                    <div class="text-5xl font-semibold text-yellow-400 stat-number">$3.5M</div>
+                    <div class="text-sm text-zinc-400 mt-1">EBITDA IMPROVEMENT</div>
                     <div class="h-px bg-zinc-800 my-6"></div>
-                    <div class="text-xs text-zinc-500">YoY Savings across Caribbean</div>
+                    <div class="text-xs text-zinc-500">YoY savings across Caribbean</div>
                 </div>
-                
+               
                 <div class="bg-zinc-950 border border-zinc-800 rounded-3xl p-8 text-center group">
-                    <div class="text-5xl font-semibold text-rose-400 stat-number" data-target="10">10</div>
-                    <div class="text-sm text-zinc-400 mt-1">MILLION $ Budget</div>
+                    <div class="text-5xl font-semibold text-rose-400 stat-number">$10M</div>
+                    <div class="text-sm text-zinc-400 mt-1">ANNUAL BUDGET OWNED</div>
                     <div class="h-px bg-zinc-800 my-6"></div>
-                    <div class="text-xs text-zinc-500">Annual CAPEX/OPEX Owned</div>
+                    <div class="text-xs text-zinc-500">CAPEX/OPEX responsibility</div>
                 </div>
-                
+               
                 <div class="bg-zinc-950 border border-zinc-800 rounded-3xl p-8 text-center group">
-                    <div class="text-5xl font-semibold text-sky-400 stat-number" data-target="15">0</div>
-                    <div class="text-sm text-zinc-400 mt-1">% OPEX REDUCTION</div>
+                    <div class="text-5xl font-semibold text-sky-400 stat-number">15%</div>
+                    <div class="text-sm text-zinc-400 mt-1">OPEX REDUCTION</div>
                     <div class="h-px bg-zinc-800 my-6"></div>
                     <div class="text-xs text-zinc-500">Automation & right-sizing</div>
                 </div>
-                
+               
                 <div class="bg-zinc-950 border border-zinc-800 rounded-3xl p-8 text-center group">
-                    <div class="text-5xl font-semibold text-purple-400 stat-number" data-target="5">0</div>
-                    <div class="text-sm text-zinc-400 mt-1">MIN KYC ONBOARDING</div>
+                    <div class="text-5xl font-semibold text-purple-400 stat-number"><5 min</div>
+                    <div class="text-sm text-zinc-400 mt-1">KYC ONBOARDING</div>
                     <div class="h-px bg-zinc-800 my-6"></div>
                     <div class="text-xs text-zinc-500">AI-powered (was 30 days)</div>
                 </div>
@@ -202,7 +198,6 @@
                 <span class="uppercase text-xs tracking-widest text-yellow-400">ACADEMIC BACKGROUND</span>
                 <h2 class="text-4xl font-semibold">Education</h2>
             </div>
-
             <div class="max-w-4xl mx-auto space-y-12">
                 <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-10">
                     <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
@@ -216,12 +211,11 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-10">
                     <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
                         <div>
                             <h3 class="text-2xl font-semibold">B.Sc. Computer Engineering</h3>
-                            <p class="text-yellow-400 mt-1">FAST  - National University of Computer and Emerging Sciences</p>
+                            <p class="text-yellow-400 mt-1">FAST - National University of Computer and Emerging Sciences</p>
                             <p class="text-zinc-400 mt-2">Islamabad, Pakistan</p>
                         </div>
                         <div class="text-right">
@@ -245,10 +239,10 @@
                     See projects <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
-            
+           
             <div class="max-w-3xl mx-auto relative">
                 <div class="absolute left-8 top-12 bottom-12 w-0.5 timeline-line"></div>
-                
+               
                 <div class="relative flex gap-8 mb-16">
                     <div class="w-16 h-16 flex-shrink-0 bg-zinc-900 border border-yellow-400 rounded-2xl flex items-center justify-center z-10">
                         <span class="text-xs font-medium text-center leading-tight">2022<br><span class="text-yellow-400">–</span><br>2025</span>
@@ -262,12 +256,12 @@
                         <ul class="space-y-3 text-sm">
                             <li class="flex gap-3"><i class="fa-solid fa-check text-yellow-400 mt-1"></i> Migrated 2M+ USSD users to new mobile wallet and digital applications with near zero downtime</li>
                             <li class="flex gap-3"><i class="fa-solid fa-check text-yellow-400 mt-1"></i> AI KYC/AML → <5 min onboarding (from days) + real-time sanction screening and transaction monitoring</li>
-                            <li class="flex gap-3"><i class="fa-solid fa-check text-yellow-400 mt-1"></i> ML churn models → 7% reduction, smart targeting, contexual marketing, dynamic pricing</li>
+                            <li class="flex gap-3"><i class="fa-solid fa-check text-yellow-400 mt-1"></i> ML churn models → 7% reduction, smart targeting, contextual marketing, dynamic pricing</li>
                             <li class="flex gap-3"><i class="fa-solid fa-check text-yellow-400 mt-1"></i> Delivered $3M EBITDA gain + 15% OpEx cut</li>
                         </ul>
                     </div>
                 </div>
-                
+               
                 <div class="relative flex gap-8 mb-16">
                     <div class="w-16 h-16 flex-shrink-0 bg-zinc-900 border border-yellow-400 rounded-2xl flex items-center justify-center z-10">
                         <span class="text-xs font-medium text-center leading-tight">2016<br><span class="text-yellow-400">–</span><br>2022</span>
@@ -280,13 +274,13 @@
                         <div class="text-zinc-400 text-sm mb-4">20M+ MAU JazzWorld • JazzCash • Tamasha OTT</div>
                         <ul class="space-y-3 text-sm">
                             <li class="flex gap-3"><i class="fa-solid fa-check text-yellow-400 mt-1"></i> Contributed to migration of JazzCash to microservices architecture</li>
-                            <li class="flex gap-3"><i class="fa-solid fa-check text-yellow-400 mt-1"></i> Built SIMOSA Super App - Pakistans largest home-grown mobile platform (17M+ MAU during my tenure)</li>
-                            <li class="flex gap-3"><i class="fa-solid fa-check text-yellow-400 mt-1"></i> Built Tamasha OTT (4M+ MAU during my tenure)</li>
+                            <li class="flex gap-3"><i class="fa-solid fa-check text-yellow-400 mt-1"></i> Built SIMOSA Super App - Pakistan’s largest home-grown mobile platform (17M+ MAU during tenure)</li>
+                            <li class="flex gap-3"><i class="fa-solid fa-check text-yellow-400 mt-1"></i> Built Tamasha OTT (4M+ MAU during tenure)</li>
                             <li class="flex gap-3"><i class="fa-solid fa-check text-yellow-400 mt-1"></i> 14% reduction in customer ops FTE via AI Automation</li>
                         </ul>
                     </div>
                 </div>
-                
+               
                 <div class="relative flex gap-8 mb-16">
                     <div class="w-16 h-16 flex-shrink-0 bg-zinc-900 border border-yellow-400 rounded-2xl flex items-center justify-center z-10">
                         <span class="text-xs font-medium text-center leading-tight">2013<br><span class="text-yellow-400">–</span><br>2016</span>
@@ -302,6 +296,7 @@
                         </ul>
                     </div>
                 </div>
+
                 <div class="relative flex gap-8">
                     <div class="w-16 h-16 flex-shrink-0 bg-zinc-900 border border-yellow-400 rounded-2xl flex items-center justify-center z-10">
                         <span class="text-xs font-medium text-center leading-tight">2009<br><span class="text-yellow-400">–</span><br>2013</span>
@@ -311,7 +306,7 @@
                             <div class="font-semibold text-xl">Consultant · UI/UX Developer · Design Engineer</div>
                             <div class="px-3 py-1 text-[10px] bg-emerald-500/10 text-emerald-400 rounded-xl">ECE GmbH Germany · PakVista · MachSol</div>
                         </div>
-                        <div class="text-zinc-400 text-sm mb-4">Early-career roles spanning business management consulting in Germany, UI/UX development, and soft
+                        <div class="text-zinc-400 text-sm mb-4">Early-career roles spanning business management consulting in Germany, UI/UX development, and software design engineering</div>
                     </div>
                 </div>
             </div>
@@ -325,7 +320,7 @@
                 <span class="uppercase text-xs tracking-widest text-yellow-400">BUILT & SCALED</span>
                 <h2 class="text-4xl font-semibold">Flagship Platforms</h2>
             </div>
-            
+           
             <div class="grid md:grid-cols-3 gap-8" id="projects-grid"></div>
         </div>
     </section>
@@ -340,7 +335,7 @@
                 </div>
                 <p class="max-w-xs text-zinc-400 text-sm">Real interfaces and flows from MonCash, JazzCash, JazzWorld & Tamasha</p>
             </div>
-            
+           
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <img src="https://raw.githubusercontent.com/saadsohail/product-portfolio/main/images/moncash-screenshot.png" alt="MonCash App Icon" class="rounded-3xl shadow-xl hover:scale-105 transition-transform">
                 <img src="https://raw.githubusercontent.com/saadsohail/product-portfolio/main/images/moncash-basic-screenshot.png" alt="MonCash Wallet Screen" class="rounded-3xl shadow-xl hover:scale-105 transition-transform">
@@ -359,7 +354,7 @@
                 <h2 class="text-4xl font-semibold">Architecture Diagrams</h2>
                 <p class="mt-4 text-zinc-400 max-w-3xl mx-auto">High-level logical & data architectures from flagship platforms — showcasing distributed systems, cloud-native design (AWS), microservices, ML pipelines, and compliance-grade infrastructure.</p>
             </div>
-            
+           
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="diagram-card bg-zinc-950 border border-zinc-800 rounded-3xl overflow-hidden cursor-pointer" onclick="showDiagram('MonCash Mobile Application Logical Architecture', 'https://raw.githubusercontent.com/saadsohail/product-portfolio/main/images/moncash-logical-architecture.png')">
                     <img src="https://raw.githubusercontent.com/saadsohail/product-portfolio/main/images/moncash-logical-architecture.png" alt="MonCash Mobile App Logical Architecture" class="w-full diagram-thumb">
@@ -368,7 +363,6 @@
                         <p class="text-sm text-zinc-400 mt-2">AWS-hosted microservices (Node.js + ECS/Fargate), WSO2 API/ESB, MongoDB Atlas, third-party integrations...</p>
                     </div>
                 </div>
-
                 <div class="diagram-card bg-zinc-950 border border-zinc-800 rounded-3xl overflow-hidden cursor-pointer" onclick="showDiagram('MonCash Data Warehouse, Reporting & AI/ML Architecture', 'https://raw.githubusercontent.com/saadsohail/product-portfolio/main/images/moncash-ai-architecture.png')">
                     <img src="https://raw.githubusercontent.com/saadsohail/product-portfolio/main/images/moncash-ai-architecture.png" alt="MonCash Data Warehouse & AI/ML Architecture" class="w-full diagram-thumb">
                     <div class="p-6">
@@ -376,7 +370,6 @@
                         <p class="text-sm text-zinc-400 mt-2">Ingestion (S3, Kinesis), Redshift warehouse, SageMaker ML platform, Bedrock GenAI...</p>
                     </div>
                 </div>
-
                 <div class="diagram-card bg-zinc-950 border border-zinc-800 rounded-3xl overflow-hidden cursor-pointer" onclick="showDiagram('MonCash Digital-first End-to-End Solution', 'https://raw.githubusercontent.com/saadsohail/product-portfolio/main/images/moncash-main-slide.png')">
                     <img src="https://raw.githubusercontent.com/saadsohail/product-portfolio/main/images/moncash-main-slide.png" alt="MonCash End-to-End via Web/App/USSD" class="w-full diagram-thumb">
                     <div class="p-6">
@@ -388,13 +381,12 @@
         </div>
     </section>
 
-    <!-- UPDATED: CORE CAPABILITIES – now 6 columns with more CTO-level topics -->
+    <!-- CORE CAPABILITIES -->
     <section id="skills" class="py-20 bg-zinc-900">
         <div class="max-w-7xl mx-auto px-6">
             <h2 class="text-center text-4xl font-semibold mb-12">Core Technology & Leadership Capabilities</h2>
-            
+           
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-                
                 <!-- 1. Engineering & Architecture -->
                 <div class="bg-zinc-950 p-8 rounded-3xl border border-zinc-800">
                     <div class="uppercase text-xs mb-4 text-yellow-400">Engineering & Architecture</div>
@@ -407,7 +399,6 @@
                         <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Mobile (Kotlin/Swift)</span>
                     </div>
                 </div>
-
                 <!-- 2. Data, AI & ML -->
                 <div class="bg-zinc-950 p-8 rounded-3xl border border-zinc-800">
                     <div class="uppercase text-xs mb-4 text-emerald-400">Data, AI & ML</div>
@@ -420,7 +411,6 @@
                         <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Tableau / Mixpanel</span>
                     </div>
                 </div>
-
                 <!-- 3. Security, Compliance & Risk -->
                 <div class="bg-zinc-950 p-8 rounded-3xl border border-zinc-800">
                     <div class="uppercase text-xs mb-4 text-sky-400">Security & Compliance</div>
@@ -433,7 +423,6 @@
                         <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Regulatory Licensing</span>
                     </div>
                 </div>
-
                 <!-- 4. Platform & Scalability -->
                 <div class="bg-zinc-950 p-8 rounded-3xl border border-zinc-800">
                     <div class="uppercase text-xs mb-4 text-purple-400">Platform & Scalability</div>
@@ -446,7 +435,6 @@
                         <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Global Multi-market</span>
                     </div>
                 </div>
-
                 <!-- 5. Product, Growth & Metrics -->
                 <div class="bg-zinc-950 p-8 rounded-3xl border border-zinc-800">
                     <div class="uppercase text-xs mb-4 text-rose-400">Product & Growth</div>
@@ -459,7 +447,6 @@
                         <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Customer 360 / Personalization</span>
                     </div>
                 </div>
-
                 <!-- 6. People, Org & Strategy -->
                 <div class="bg-zinc-950 p-8 rounded-3xl border border-zinc-800">
                     <div class="uppercase text-xs mb-4 text-indigo-400">People, Org & Strategy</div>
@@ -472,7 +459,6 @@
                         <span class="px-5 py-2 bg-zinc-900 text-sm rounded-2xl">Vendor & Partnership Strategy</span>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -481,12 +467,12 @@
     <footer class="bg-black py-16">
         <div class="max-w-7xl mx-auto px-6 text-center">
             <div class="text-3xl font-light mb-6">Ready to build the next fintech super app together?</div>
-            <a href="mailto:syedsaadsohail@gmail.com" 
+            <a href="mailto:syedsaadsohail@gmail.com"
                class="inline-flex items-center gap-4 bg-yellow-400 text-zinc-950 px-10 py-6 rounded-3xl text-lg font-semibold hover:scale-105 transition-all">
                 LET'S TALK
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
-            
+           
             <div class="mt-16 text-xs text-zinc-500">
                 © 2026 Syed Saad Sohail
             </div>
@@ -505,98 +491,97 @@
 
     <script>
         const projects = [
-    {
-        id: 1,
-        title: "MonCash Super App",
-        logo: "https://raw.githubusercontent.com/saadsohail/product-portfolio/main/images/moncash-logo.jpg",
-        company: "Digicel Group",
-        period: "Feb 2022 – Dec 2025",
-        impact: "3M MAU • $40M+ turnover • $1.2M EBITDA",
-        desc: "Full P&L ownership of Digicel’s flagship mobile wallet across Haiti & Jamaica. Migrated 2M+ legacy USSD users, built AI KYC/AML (<5 min onboarding), ML churn prediction (7% reduction), fraud models, and secured fintech licenses.",
-        tech: ["React (Web)", "Kotlin (Android)", "Swift (iOS)", "Node.js", "MongoDB", "Prometheus", "WSO2 API", "AWS", "Redshift", "Glue ETL", "Tableau", "SageMaker ML"],
-        play: "https://play.google.com/store/apps/details?id=com.useboom.htwallet",
-        apple: "https://apps.apple.com/us/app/moncash/id1498332907",
-        image: "https://raw.githubusercontent.com/saadsohail/product-portfolio/main/images/moncash-logo.jpg"
-    },
-    {
-        id: 2,
-        title: "JazzCash Payments Platform",
-        logo: "https://raw.githubusercontent.com/saadsohail/product-portfolio/main/images/jazzcash-logo.jpg",
-        company: "Jazz Pakistan (Veon)",
-        period: "Oct 2016 – Sep 2021",
-        impact: "Part of 20M+ MAU ecosystem • Scalable payments core",
-        desc: "Led full technology due diligence and migration of legacy JazzCash to modern microservices stack: Huawei Mobile Money + Temenos T24 + WSO2 API gateway for open banking & 3PP integrations.",
-        tech: ["React (Web)", "Kotlin (Android)", "Swift (iOS)", "IBM / Huawei", "Prometheus", "IBM DB & ETL", "WSO2 / IBM API", "On-prem", "Firebase", "Custom Analytics"],
-        play: "https://play.google.com/store/apps/details?id=com.techlogix.mobilinkcustomer",
-        apple: "#",
-        image: "https://raw.githubusercontent.com/saadsohail/product-portfolio/main/images/jazzcash-logo.jpg"
-    },
-    {
-        id: 3,
-        title: "JazzWorld Super App (SIMOSA)",
-        logo: "https://raw.githubusercontent.com/saadsohail/product-portfolio/main/images/simosa-logo.png",
-        company: "Jazz Pakistan (Veon)",
-        period: "Oct 2016 – Feb 2022",
-        impact: "20M+ MAU • Loyalty, self-service & commerce hub",
-        desc: "Spearheaded engineering for JazzWorld super app: payments integration, gamification, loyalty, telco self-service, commerce, AI chatbot. 2× faster rollouts, 10× testing speed.",
-        tech: ["Angular / React", "Kotlin (Android)", "Swift (iOS)", "Java Spring Boot", "MariaDB", "Prometheus", "WSO2 API", "Docker", "IBM / Firebase", "PowerBI", "Mixpanel"],
-        play: "https://play.google.com/store/apps/details?id=com.jazz.jazzworld",
-        apple: "https://apps.apple.com/us/app/simosa-jazz-world/id1441912305",
-        image: "https://raw.githubusercontent.com/saadsohail/product-portfolio/main/images/simosa-logo.png"
-    },
-    {
-        id: 4,
-        title: "Tamasha OTT Platform",
-        logo: "https://raw.githubusercontent.com/saadsohail/product-portfolio/main/images/tamasha-logo.png",
-        company: "Jazz Pakistan",
-        period: "Jul 2021 – Feb 2022",
-        impact: "4M+ MAU • Optimized for low-bandwidth markets",
-        desc: "Built and scaled Pakistan’s leading OTT streaming service: resilient CDN, real-time telemetry, performance analytics, content delivery, gamification for emerging markets.",
-        tech: ["React (Web)", "Kotlin (Android)", "Swift (iOS)", "Java", "Prometheus", "Custom API Manager", "Firebase", "Hybrid Cloud", "SQL / Firebase", "Custom Dashboards"],
-        play: "https://play.google.com/store/apps/details?id=com.spbtv.mobilinktv",
-        apple: "#",
-        image: "https://raw.githubusercontent.com/saadsohail/product-portfolio/main/images/tamasha-logo.png"
-    }
-];
+            {
+                id: 1,
+                title: "MonCash Super App",
+                logo: "https://raw.githubusercontent.com/saadsohail/product-portfolio/main/images/moncash-logo.jpg",
+                company: "Digicel Group",
+                period: "Feb 2022 – Dec 2025",
+                impact: "3M MAU • $40M+ turnover • $1.2M EBITDA",
+                desc: "Full P&L ownership of Digicel’s flagship mobile wallet across Haiti & Jamaica. Migrated 2M+ legacy USSD users, built AI KYC/AML (<5 min onboarding), ML churn prediction (7% reduction), fraud models, and secured fintech licenses.",
+                tech: ["React (Web)", "Kotlin (Android)", "Swift (iOS)", "Node.js", "MongoDB", "Prometheus", "WSO2 API", "AWS", "Redshift", "Glue ETL", "Tableau", "SageMaker ML"],
+                play: "https://play.google.com/store/apps/details?id=com.useboom.htwallet",
+                apple: "https://apps.apple.com/us/app/moncash/id1498332907",
+                image: "https://raw.githubusercontent.com/saadsohail/product-portfolio/main/images/moncash-logo.jpg"
+            },
+            {
+                id: 2,
+                title: "JazzCash Payments Platform",
+                logo: "https://raw.githubusercontent.com/saadsohail/product-portfolio/main/images/jazzcash-logo.jpg",
+                company: "Jazz Pakistan (Veon)",
+                period: "Oct 2016 – Sep 2021",
+                impact: "Part of 20M+ MAU ecosystem • Scalable payments core",
+                desc: "Led full technology due diligence and migration of legacy JazzCash to modern microservices stack: Huawei Mobile Money + Temenos T24 + WSO2 API gateway for open banking & 3PP integrations.",
+                tech: ["React (Web)", "Kotlin (Android)", "Swift (iOS)", "IBM / Huawei", "Prometheus", "IBM DB & ETL", "WSO2 / IBM API", "On-prem", "Firebase", "Custom Analytics"],
+                play: "https://play.google.com/store/apps/details?id=com.techlogix.mobilinkcustomer",
+                apple: "#",
+                image: "https://raw.githubusercontent.com/saadsohail/product-portfolio/main/images/jazzcash-logo.jpg"
+            },
+            {
+                id: 3,
+                title: "JazzWorld Super App (SIMOSA)",
+                logo: "https://raw.githubusercontent.com/saadsohail/product-portfolio/main/images/simosa-logo.png",
+                company: "Jazz Pakistan (Veon)",
+                period: "Oct 2016 – Feb 2022",
+                impact: "20M+ MAU • Loyalty, self-service & commerce hub",
+                desc: "Spearheaded engineering for JazzWorld super app: payments integration, gamification, loyalty, telco self-service, commerce, AI chatbot. 2× faster rollouts, 10× testing speed.",
+                tech: ["Angular / React", "Kotlin (Android)", "Swift (iOS)", "Java Spring Boot", "MariaDB", "Prometheus", "WSO2 API", "Docker", "IBM / Firebase", "PowerBI", "Mixpanel"],
+                play: "https://play.google.com/store/apps/details?id=com.jazz.jazzworld",
+                apple: "https://apps.apple.com/us/app/simosa-jazz-world/id1441912305",
+                image: "https://raw.githubusercontent.com/saadsohail/product-portfolio/main/images/simosa-logo.png"
+            },
+            {
+                id: 4,
+                title: "Tamasha OTT Platform",
+                logo: "https://raw.githubusercontent.com/saadsohail/product-portfolio/main/images/tamasha-logo.png",
+                company: "Jazz Pakistan",
+                period: "Jul 2021 – Feb 2022",
+                impact: "4M+ MAU • Optimized for low-bandwidth markets",
+                desc: "Built and scaled Pakistan’s leading OTT streaming service: resilient CDN, real-time telemetry, performance analytics, content delivery, gamification for emerging markets.",
+                tech: ["React (Web)", "Kotlin (Android)", "Swift (iOS)", "Java", "Prometheus", "Custom API Manager", "Firebase", "Hybrid Cloud", "SQL / Firebase", "Custom Dashboards"],
+                play: "https://play.google.com/store/apps/details?id=com.spbtv.mobilinktv",
+                apple: "#",
+                image: "https://raw.githubusercontent.com/saadsohail/product-portfolio/main/images/tamasha-logo.png"
+            }
+        ];
 
-function renderProjects() {
-    const container = document.getElementById('projects-grid');
-    container.innerHTML = '';
-
-    projects.forEach(project => {
-        const card = document.createElement('div');
-        card.className = 'project-card bg-zinc-950 border border-zinc-800 rounded-3xl overflow-hidden cursor-pointer flex flex-col';
-        card.innerHTML = `
-            <div class="bg-zinc-900 p-8 flex justify-center items-center border-b border-zinc-800">
-                <img src="${project.logo}" alt="${project.title} Logo" class="max-h-24 w-auto object-contain">
-            </div>
-            <div class="p-7 flex flex-col flex-grow">
-                <div class="flex justify-between items-start mb-4">
-                    <div>
-                        <div class="font-semibold text-xl">${project.title}</div>
-                        <div class="text-yellow-400 text-sm">${project.company}</div>
+        function renderProjects() {
+            const container = document.getElementById('projects-grid');
+            container.innerHTML = '';
+            projects.forEach(project => {
+                const card = document.createElement('div');
+                card.className = 'project-card bg-zinc-950 border border-zinc-800 rounded-3xl overflow-hidden cursor-pointer flex flex-col';
+                card.innerHTML = `
+                    <div class="bg-zinc-900 p-8 flex justify-center items-center border-b border-zinc-800">
+                        <img src="${project.logo}" alt="${project.title} Logo" class="max-h-24 w-auto object-contain">
                     </div>
-                    <div class="text-[10px] bg-zinc-900 px-4 py-2 rounded-2xl text-center leading-none">
-                        ${project.period}
+                    <div class="p-7 flex flex-col flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <div class="font-semibold text-xl">${project.title}</div>
+                                <div class="text-yellow-400 text-sm">${project.company}</div>
+                            </div>
+                            <div class="text-[10px] bg-zinc-900 px-4 py-2 rounded-2xl text-center leading-none">
+                                ${project.period}
+                            </div>
+                        </div>
+                        <div class="text-sm text-emerald-400 font-medium mb-4">${project.impact}</div>
+                        <div class="text-xs text-zinc-400 mb-6 line-clamp-4">${project.desc}</div>
+                       
+                        <div class="mt-auto flex flex-wrap gap-2 mb-6">
+                            ${project.tech.slice(0,7).map(t => `<span class="text-[10px] bg-zinc-900 px-4 py-1 rounded-2xl">${t}</span>`).join('')}
+                            ${project.tech.length > 7 ? '<span class="text-[10px] bg-zinc-800 px-4 py-1 rounded-2xl">+' + (project.tech.length - 7) + '</span>' : ''}
+                        </div>
+                       
+                        <div class="text-yellow-400 text-sm flex items-center gap-2 hover:gap-3 transition-all" onclick="showProject(${project.id}); event.stopPropagation()">
+                            VIEW FULL CASE <i class="fa-solid fa-arrow-right"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="text-sm text-emerald-400 font-medium mb-4">${project.impact}</div>
-                <div class="text-xs text-zinc-400 mb-6 line-clamp-4">${project.desc}</div>
-                
-                <div class="mt-auto flex flex-wrap gap-2 mb-6">
-                    ${project.tech.slice(0,7).map(t => `<span class="text-[10px] bg-zinc-900 px-4 py-1 rounded-2xl">${t}</span>`).join('')}
-                    ${project.tech.length > 7 ? '<span class="text-[10px] bg-zinc-800 px-4 py-1 rounded-2xl">+' + (project.tech.length - 7) + '</span>' : ''}
-                </div>
-                
-                <div class="text-yellow-400 text-sm flex items-center gap-2 hover:gap-3 transition-all" onclick="showProject(${project.id}); event.stopPropagation()">
-                    VIEW FULL CASE <i class="fa-solid fa-arrow-right"></i>
-                </div>
-            </div>
-        `;
-        card.onclick = () => showProject(project.id);
-        container.appendChild(card);
-    });
-}
+                `;
+                card.onclick = () => showProject(project.id);
+                container.appendChild(card);
+            });
+        }
 
         function showProject(id) {
             const project = projects.find(p => p.id === id);
@@ -656,7 +641,7 @@ function renderProjects() {
 
         function animateCounters() {
             document.querySelectorAll('.stat-number').forEach(counter => {
-                const target = parseFloat(counter.getAttribute('data-target'));
+                const target = parseFloat(counter.getAttribute('data-target') || counter.textContent.replace(/[^0-9.]/g, ''));
                 let count = 0;
                 const increment = target / 60;
                 const timer = setInterval(() => {
@@ -665,7 +650,7 @@ function renderProjects() {
                         count = target;
                         clearInterval(timer);
                     }
-                    counter.textContent = Math.floor(count) + (target % 1 !== 0 ? '+' : '');
+                    counter.textContent = count.toFixed(count % 1 === 0 ? 0 : 1) + (target > 10 ? '+' : '');
                 }, 30);
             });
         }
@@ -685,18 +670,3 @@ function renderProjects() {
     </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
